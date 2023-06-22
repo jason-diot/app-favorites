@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient(90deg, #090741 0%, #bb2f2f 100%);
+    background-repeat: no-repeat;
+    min-height: 200vh;
+}
+
+.navbar {
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-operagx {
+    margin: 10px 0px 0px 20px;
+    animation: grow 1.5s;
+    width: 98px; height: 98px;
+}
+
+.flip {
+    height: 80px;
+    width: 80px;
+}
+
+.flip:hover {
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+}
+/* Animation d'agrandissement sur le logo */
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.operagx {
+    text-align: center;
+    font-size: 30px;
+    animation-name: title;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin-top: 25px;
+    margin-left: 60px;
+}
+.operagx:hover {
+    color: #ffcc70;
+    cursor: pointer;
+}
+@keyframes title {
+    0%   {color: #090741;}
+    50% {color: #bb2f2f;}
+    100%   {color: #090741;}
+}
+
+/* Bouton Opera GX */
+.btnoperagx {
+    background-color: #FA1E4E;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 20px 0px 0px;
+}
+.btnoperagx:hover {
+    background-color:#ea1443;
+}
+.btnoperagx img {
+    height: 25px;
+    width: 25px;
+}
+.btnoperagx a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Main Content */
+.maincontent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.maincontent p {
+    max-width: 545px;
+    color: #FA1E4E;
+}
+.maincontent p span {
+    max-width: 545px;
+    color: #b7b7b7;
+}
+.maincontent h1 {
+    color: #FA1E4E;
+    font-size: 40px;
+}
+.operamainimg {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    min-height: 60vh;
+}
+.screen {
+    position: absolute;
+    z-index: 1;
+}
+.mobile {
+    position: absolute;
+    z-index: 2;
+    margin: 320px 0px 0px 880px;
+}
+
+/* Main Content Suite*/
+.whatisoperagx h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 450px;
+    color: #FA1E4E;
+}
+
+.imgdescription {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.imgdescription p {
+    color: #919191;
+    min-width: 525px;
+    max-height: 300px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.operagxlaptop {
+    height: 523px;
+    width: 877px;
+    margin-left: 300px;
+}

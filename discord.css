@@ -1,0 +1,302 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+.navbar{
+    background-color: #34363c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    color: white;
+}
+
+.icon{
+    fill: white;
+    cursor: pointer;
+}
+
+.navbar input, .nav-menu, .dropdown{
+    display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+.nav-menu{
+    background-color: #34363c;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.nav-item a, .drop-item a, .show{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.6rem;
+}
+
+.nav-menu a:hover, .show:hover{
+    color: #7289da;
+}
+
+@media screen and (min-width: 768px){
+    .icon{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        margin-right: 2%;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        background-color: #7289da;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
+    }
+
+}
+.lowheader h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    margin-top: -70px;
+    font-size: 50px;
+    z-index: 2;
+    animation: grow 3s;
+}
+.lowheader p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    margin-top: 30px;
+    z-index: 2;
+    margin-bottom: 180px;
+    animation: grow 4s;
+}
+.lowheader {
+    position: relative;
+}
+
+/* Images Low Header*/
+.discord0 {
+    z-index: 1;
+    height: 576px;
+    width: 1823px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: grow 5s;
+}
+.discord1 {
+    z-index: 2;
+    position: absolute;
+    left: -270px;
+    top: 160px;
+    animation: grow 5s;
+}
+.discord2 {
+    z-index: 2;
+    position: absolute;
+    right: -227px;
+    top: 151px;
+    animation: grow 5s;
+}
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.top {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#logo {
+    width: 15%;
+    object-position: right;
+    display: block;
+    margin: 1%;;
+}
+a {
+    padding-left: 2%;
+}
+ul {
+    display: flex;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+}
+nav {
+    background-color: white;
+}
+.buttonLarge-3z9xOS {
+    border-radius: 28px;
+    font-size: 20px;
+    padding: 16px 32px;
+    height: 20%;
+}
+
+.top2 {
+    display: flex;
+    background-color: #7289da;
+    margin: 1%;
+    padding: 7%;
+    justify-content: space-between;
+}
+img#background {
+    padding: 30%;
+}
+
+.hello {
+    color: white;
+    margin: 2%;
+    background-position: center;
+    display: flex;
+    font-size: 100%;
+}
+#gifhello {
+    width: 50%;
+    display: flex;
+}
+.top3 {
+    display: flex;
+    background-color: white;
+}
+.vocalimg {
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+}
+img#vocal {
+    width: 100%;
+    margin: 9%;
+}
+
+.vocaltxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    width: 100%;
+}
+
+.top4 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #7289da;
+}
+img#com {
+    width: 150%; 
+}
+.imgcom {
+    display: flex;
+    flex-direction: column;
+    width: 140%;
+    align-items: stretch;
+}
+.txtcom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    width: 100%;
+}
+
+.top10 {
+    display: flex;
+    background-color: white;
+}
+.log{
+    display: flex;
+}
+.qrcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.top11 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #7289da;
+}
+img#store {
+    width: 100%; 
+}
+.imgstore {
+    display: flex;
+    flex-direction: column;
+    width: 140%;
+    align-items: stretch;
+}
+.txtsotre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    width: 90%;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 300%;
+}
+
+h2 {
+    width: 300%;
+}
+
+p {
+    font-size: 180%;
+}
+
+.container {
+    display: flex;
+    opacity: 0;
+    animation: fade-in 5s forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
